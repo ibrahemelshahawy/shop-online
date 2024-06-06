@@ -133,6 +133,15 @@ body{
     align-items:center ;
   }
 
+.sign_in_Btn{
+    padding: 10px 35px;
+    background-color: #A72F3B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
   .step1{
     width: 25%;
     margin: auto;
@@ -303,6 +312,8 @@ body{
   .footer_search button img{
     width: 30px;
   }
+
+
 
   .social_media{
     width: 10%;
