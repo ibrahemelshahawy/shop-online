@@ -314,6 +314,14 @@ body{
     align-items: center;
   }
 
+
+.sign_in_Btn{
+padding: 8px 25px;
+background-color: #A72F3B; 
+
+}
+
+
   .social_media p{
     width: 100%;
     text-align: center;
