@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <link rel="icon" href="/img/mobile-shopping.png">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <link rel="stylesheet" href="index.css">
+    <nav>
+        <div class="bage_logo">
+            <img src="../img/mobile-shopping.png" alt="">
+            <h1>متجرنا اونلاين</h1>
+        </div>
+        <div class="search_box">
+            <input type="search" placeholder="ابحث عن منتجك المفضل.......">
+            <button type="submit">
+                <img src="../img/search (1).png" alt="">
+            </button>
+        </div>
+
+        <div class="cart_logout">
+            <span onclick="logOut()">
+                <img src="../img/log-out.png" alt="">
+                <p>تسجيل خروج</p>
+            </span>
+
+            <span class="cart">
+                <a href="./../cart/index.html" >
+                <img src="../img/cart.png" alt="">
+                <p>سلة المشتريات</p>
+            </a>
+            </span>
+            <button class="side_menu" onclick="openSideList()"><img src="/img/menu (1).png" alt=""></button>
+        </div>
+        <div class="profile_photo" >
+            <a href="../profile/index.html">
+                <img src="../img/profileimg.png" alt="" id="profile_photo">
+
+            </a>
+        </div>
+    </nav>
+<div class="side_menu_parent" id="side_menu_parent">
+    <div class="side_menu_black_continer" onclick="closeSideMenu()"></div>
+    <div class="side_menu_continer" id="side_menu_continer">
+        <div class="close_side_menu">
+            <img src="../img/close side menu.png" alt="" onclick="closeSideMenu()">
+        </div>
+        <div class="menu_header">
+            <div class="profile_photo">
+                <img src="" alt="" id="profile_photo">
+            </div>
+            <div class="profile_info">
+                <h3 id="client_name"></h3>
+                <p id="client_email"></p>
+            </div>
+        </div>
+        <div class="side_menu_logout">
+            <img src="../img/log-out.png" alt="">
+            <p>تسجيل الخروج</p>
+        </div>
+        <div class="side_menu_pages">
+            <ul>
+                <li>الكل</li>
+                <li>ملابس الرجال</li>
+                <li>ملابس النساء</li>
+                <li>ملابس الأطفال</li>
+                <li>الإكسسوارات</li>
+                <li>الأحذية</li>
+                <li>مجموعات المواسم</li>
+                <li>مجموعات خاصة</li>
+                <li> الشاذلي العروض والصفقات</li>
+                <li>دلائل المقاسات</li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+
+  <!-- <div class="categorise">
+    <ul >
+        <li>الكل</li>
+        <li>ملابس الرجال</li>
+        <li>ملابس النساء</li>
+        <li>ملابس الأطفال</li>
+        <li>الإكسسوارات</li>
+        <li>الأحذية</li>
+        <li>مجموعات المواسم</li>
+        <li>مجموعات خاصة</li>
+        <li> الشاذلي العروض والصفقات</li>
+        <li>دلائل المقاسات</li>
+        
+    </ul>
+
+
+  </div> -->
+        
+  <swiper-container id="mySwiper" class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"loop="true">
+
+  <swiper-slide>
+  <div class="f_panner">
+    <span class="f_panner_text">
+        <h1>اكتشف أسلوبك، تسوّق عبر الإنترنت!</h1>
+        <h3>لماذا تتسوق معنا؟
+
+        </h2>
+        <p> 1: تشكيلة واسعة: استكشف مجموعة متنوعة من المنتجات، بدءًا من الملابس الأنيقة إلى الإكسسوارات البارزة، مختارة بعناية لتلبية ذوقك الفريد.
+        </p>
+        <p>2: ضمان الجودة: نعطي الأولوية للجودة في كل قطعة نقدمها، مضمونة
+
+        </p>
+    </span>
+
+
+
+    <span class="f_panner_img">
+        <img src="../img/3 girls 1.png" alt="">
+        <img src="../img/goll3 1.png" alt="" class="f_flower">
+        <img src="../img/goll7 1.png" alt="" class="sec_flower">
+
+
+    </span>
+
+    <span class="f_frame"></span>
+    <span class="se_frame"></span>
+    <span class="th_frame"></span>
+    <span class="fo_frame"></span>
+
+    </div>
+
+</swiper-slide>
+
+<swiper-slide>
+    <div class="f_panner">
+      <span class="f_panner_text">
+          <h1>اكتشف أسلوبك، تسوّق عبر الإنترنت!</h1>
+          <h3>لماذا تتسوق معنا؟
+  
+          </h2>
+          <p> 1: تشكيلة واسعة: استكشف مجموعة متنوعة من المنتجات، بدءًا من الملابس الأنيقة إلى الإكسسوارات البارزة، مختارة بعناية لتلبية ذوقك الفريد.
+          </p>
+          <p>2: ضمان الجودة: نعطي الأولوية للجودة في كل قطعة نقدمها، مضمونة
+  
+          </p>
+      </span>
+  
+  
+  
+      <span class="f_panner_img">
+          <img src="../img/3 girls 1.png" alt="">
+          <img src="../img/goll3 1.png" alt="" class="f_flower">
+          <img src="../img/goll7 1.png" alt="" class="sec_flower">
+  
+  
+      </span>
+  
+      <span class="f_frame"></span>
+      <span class="se_frame"></span>
+      <span class="th_frame"></span>
+      <span class="fo_frame"></span>
+  
+      </div>
+  
+  </swiper-slide>
+  <swiper-slide>
+    <div class="f_panner">
+      <span class="f_panner_text">
+          <h1>اكتشف أسلوبك، تسوّق عبر الإنترنت!</h1>
+          <h3>لماذا تتسوق معنا؟
+  
+          </h2>
+          <p> 1: تشكيلة واسعة: استكشف مجموعة متنوعة من المنتجات، بدءًا من الملابس الأنيقة إلى الإكسسوارات البارزة، مختارة بعناية لتلبية ذوقك الفريد.
+          </p>
+          <p>2: ضمان الجودة: نعطي الأولوية للجودة في كل قطعة نقدمها، مضمونة
+  
+          </p>
+      </span>
+  
+  
+  
+      <span class="f_panner_img">
+          <img src="../img/3 girls 1.png" alt="">
+          <img src="../img/goll3 1.png" alt="" class="f_flower">
+          <img src="../img/goll7 1.png" alt="" class="sec_flower">
+  
+  
+      </span>
+  
+      <span class="f_frame"></span>
+      <span class="se_frame"></span>
+      <span class="th_frame"></span>
+      <span class="fo_frame"></span>
+  
+      </div>
+  
+  </swiper-slide>
+  
+  <swiper-slide>
+      <div class="f_panner">
+        <span class="f_panner_text">
+            <h1>اكتشف أسلوبك، تسوّق عبر الإنترنت!</h1>
+            <h3>لماذا تتسوق معنا؟
+    
+            </h2>
+            <p> 1: تشكيلة واسعة: استكشف مجموعة متنوعة من المنتجات، بدءًا من الملابس الأنيقة إلى الإكسسوارات البارزة، مختارة بعناية لتلبية ذوقك الفريد.
+            </p>
+            <p>2: ضمان الجودة: نعطي الأولوية للجودة في كل قطعة نقدمها، مضمونة
+    
+            </p>
+        </span>
+    
+    
+    
+        <span class="f_panner_img">
+            <img src="../img/3 girls 1.png" alt="">
+            <img src="../img/goll3 1.png" alt="" class="f_flower">
+            <img src="../img/goll7 1.png" alt="" class="sec_flower">
+    
+    
+        </span>
+    
+        <span class="f_frame"></span>
+        <span class="se_frame"></span>
+        <span class="th_frame"></span>
+        <span class="fo_frame"></span>
+    
+        </div>
+    
+    </swiper-slide>
+  
+  
+
+
+
+</swiper-container>
+
+
+
+
+<div class="best_sails">
+    <div class="discount_progress">
+        <span class="line"></span>
+        <div class="sec_name">
+            <img src="../img/medal-star.png" alt="">
+            <p>الاكثر مبيعا</p>
+        </div>
+        <span class="line"></span>
+    
+    
+    </div>
+
+
+    <div class="products_continer"></div>
+
+
+</div>
+    
+           
+<div class="discount_progress">
+    <span class="line"></span>
+    <div class="sec_name">
+        <img src="/discount-shape.png" alt="">
+        <p>الخصومات الموسميه</p>
+    </div>
+    <span class="line"></span>
+
+
+</div>
+
+<div class="discount_continer">
+    <div class="discount-shape1">
+        <img src="../img/Frame 26086816.png" alt="">
+    </div>
+    <div class="discount-shape2">
+        <img src="../img/Frame 26086818.png" alt="">
+        <img src="../img/Frame 26086819.png" alt="">
+        <img src="../img/Frame 26086821.png" alt="">
+        <img src="../img/Frame 26086820.png" alt="">
+    </div>
+
+</div>
+        
+<div class="discount_progress">
+    <span class="line"></span>
+    <div class="sec_name">
+        <img src="../img/like-shapes.png" alt="">
+        <p> استيكرات</p>
+    </div>
+    <span class="line"></span>
+
+
+</div>
+
+
+<div class="stiker_continer"></div>
+
+<div class="gifts_panner">
+    <div class="gift_panner1">
+        <div class="gift_panner1_textbtn">
+         <p>قسم مناسب لهدايا الاطفال ,اختر هديه لطفلك بعنايهٍ</p>
+            <button>اختر هدية طفلك المناسبه  </button>
+        </div>
+        <img src="../img/dadi 1.png" alt="">
+    </div>
+
+    <div class="gift_panner1">
+        <div class="gift_panner1_textbtn">
+         <p>قسم مناسب لهدايا الاطفال الفتيات ,اختر هديه لطفلك بعنايهٍ</p>
+            <button>اختر هدية طفلتك المناسبه  </button>
+        </div>
+        <img src="../img/mom 1.png" alt="">
+    </div>
+</div>
+    
+
+
+
+<div class="popup_continer" id="popup" >
+    <div class="closing_div" onclick="closePopup1()"></div>
+<div class="product_popup" id="popup_content">
+    <img src="../img/close.png" alt="" onclick="closePopup1()" class="close">
+</div>
+</div>
+
+
+
+    <div class="footer">
+        <div class="footer_search">
+            <p>ابحث تجد كل ماتحبه</p>
+            <input type="search">
+            <button>
+                <img src="../img/search (1).png" alt="">
+            </button>
+        </div>
+
+        <div class="social_media">
+            <p>تابعنا ليصلك كل جديد</p>
+            <a href="http://">
+                <img src="../img/174-1744532_facebook-icon-link-facebook-white-icon-hd-png-fotor-bg-remover-2023041811029 1.png"
+                    alt="">
+            </a>
+
+            <a href="http://">
+                <img src="../img/Instagram svg.png" alt="">
+            </a>
+
+            <a href="http://">
+                <img src="../img/Pinterest svg.png" alt="">
+            </a>
+
+            <a href="http://">
+                <img src="../img/YouTube svg.png" alt="">
+            </a>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="about_our_shop">
+            <div class="about_our_shop_sec">
+                <h1>تواصل معنا</h1>
+                <a href=""><p>الشحن والتوصيل</p></a> 
+                <a href=""><p>الشحن والتوصيل</p></a> 
+                <a href=""><p>الشحن والتوصيل</p></a> 
+                <a href=""><p>الشحن والتوصيل</p></a> 
+            </div>
+
+            <div class="about_our_shop_sec">
+                <h1>تواصل معنا</h1>
+                <a href=""><p>الشحن والتوصيل</p></a> 
+                <a href=""><p>الشحن والتوصيل</p></a> 
+                <a href=""><p>الشحن والتوصيل</p></a> 
+                <a href=""><p>الشحن والتوصيل</p></a> 
+            </div>
+
+            <div class="about_our_shop_sec">
+                <h1>تواصل معنا</h1>
+                <a href=""><p>الشحن والتوصيل</p></a> 
+                <a href=""><p>الشحن والتوصيل</p></a> 
+                <a href=""><p>الشحن والتوصيل</p></a> 
+                <a href=""><p>الشحن والتوصيل</p></a> 
+            </div>
+
+            <div class="about_our_shop_sec">
+                <h1>تواصل معنا</h1>
+                <a href=""><p>الشحن والتوصيل</p></a> 
+                <a href=""><p>الشحن والتوصيل</p></a> 
+                <a href=""><p>الشحن والتوصيل</p></a> 
+                <a href=""><p>الشحن والتوصيل</p></a> 
+            </div>
+
+        </div>
+        <div class="about_us">
+        <div class="footer_logo">
+            <img src="../img/mobile-shopping.png" alt="">
+            <h1>متجرنا اونلاين</h1>
+        </div>
+        <p class="about_discreption">المتاجر الإلكترونية أصبحت جزءًا من حياتنا اليومية الآن، لأن الجميع يستمتع بإمكانية شراء كل ما يحتاجون إليه، سواء كانت ملابس أو إلكترونيات، دون الحاجة إلى التحرك بالقدم. والأمر يكون أفضل حتى عندما يمكنك شراء كل ما تبحث عنه، كل ذلك من نفس المتجر. هذا ما تقدمه جوميا مصر، وهذا ما يجعلها واحدة من أفضل مواقع التسوق عبر الإنترنت في مصر.</p>
+        <p class="location">العنوان : طنطا / سبرباي شارع الشيخ محمد بسيوني</p>
+        <div class="our_partiners">
+            <img src="../img/01.png" alt="">
+            <img src="../img/02.png" alt="">
+            <img src="../img/03 1.png" alt="">
+        </div>
+    </div>
+    </footer>
+<div class="copy_rights">
+    <p>© 2024 ibrahem elshahawy Enterprises </p>
+</div>
+
+<div class="tost_bar" id="tost_bar">
+    <div class="tost_data">
+    <img src="" alt="" id="tost_bar_img">
+    <h4 id="tost_bar_messsge"></h4>
+    </div>
+    <div class="loader8" id="loader8"></div>
+    <div class="loader9" id="loader9"></div>
+
+</div>
+
+
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="../home/index.js"></script>
+
+
+
+</body>
+
+</html>

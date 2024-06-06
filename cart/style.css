@@ -1,0 +1,221 @@
+.cart_title{
+    padding: 20px;
+    margin: auto;
+    width: 90%;
+    border-bottom:.1px solid red;
+}
+
+.cart_products_continer{
+    width: 95%;
+    /* height: 100vh; */
+    /* background-color:blueviolet ; */
+    margin:10px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cart_products{
+    width: 60%;
+    /* height: 100vh; */
+    /* background-color: chartreuse; */
+}
+
+
+.cart_product{
+    position: relative;
+    width: 98%;
+    /* height: 20vh; */
+    background-color: #e0dbdb;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+.product_img{
+    width: 20%;
+}
+
+.remove_product_Btn{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    padding: 0px;
+    border: none;
+    background-color: #ff5454;
+    cursor: pointer;
+    border-radius: 7px;
+    display: flex;
+}
+
+.cart_product p{
+    width: 25%;
+}
+
+.remove_product_Btn img{
+    width: 30px;
+}
+
+
+.counter_continer{
+    width: 10%;
+    /* height: 8vh; */
+    /* background-color: white; */
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    font-size: large;
+    padding: 10px;
+    border-radius: 10px;
+    border: .1px solid #A72F3B;
+}
+
+.counter_continer p{
+    margin: 0px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.total_price{
+    /* width: %; */
+    border: .1px solid #A72F3B;
+    padding: 15px;
+    background-color: white;
+    margin: 10px 0px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.counter_continer button{
+    cursor: pointer;
+    border: none;
+    background-color: #e0dbdb;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.counter_continer button img{
+    width: 30px;
+}
+
+.name_discrebtion_continer{
+    width: 50%;
+}
+
+
+.name_discrebtion_continer p{
+    width: 100%;
+}
+
+
+/* .caunter_totalPrice_continer{
+    width: 0%;
+    display: flex;
+} */
+
+
+
+
+
+.cart_products_recept{
+    width: 30%;
+    height: fit-content;
+    /* background-color: chocolate; */
+    padding: 10px;
+    border-radius: 15px;
+    border: .1px solid black;
+    margin-top:20px ;
+}
+
+.recept_sail_code{
+    width: 98%;
+    border-radius: 15px;
+    /* height: 20vh; */
+    /* background-color: rebeccapurple; */
+    margin:10px auto;
+    /* border: .1px solid black; */
+
+}
+
+.recept_sail_code h3{
+    padding: 20px;
+    margin: 0px !important;
+}
+
+.recept_sail_code p{
+    margin: 0px;
+    width: 90%;
+    margin: auto;
+    font-size: smaller;
+    padding-bottom: 10px ;
+}
+
+.code_input{
+    padding:10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.code_input input{
+    width: 70%;
+    border: .1px solid #A72F3B;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    /* font-size: larger; */
+    color: #A72F3B;
+
+}
+
+.code_input button{
+    cursor: pointer;
+    background-color: white;
+    font-weight: bolder;
+    padding: 10px;
+    /* border: none; */
+    color: #A72F3B;
+    border-radius: 5px;
+    border: .1px solid #A72F3B;
+
+}
+
+.recept_data{
+    width: 90%;
+    /* height: 30vh; */
+    margin: auto;
+    /* background-color: blueviolet; */
+    border-top:.1px solid black ;
+}
+
+.recept_data_span{
+    width: 93%;
+    margin: auto;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 10px;
+}
+
+.confirm_order{
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #A72F3B;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.confirm_order:hover{
+    scale: 1.01;
+    background-color: #15c33e;
+}

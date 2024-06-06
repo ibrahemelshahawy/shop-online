@@ -1,0 +1,121 @@
+*{
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+
+.sign_in_continer{
+    width: 100%;
+    /* background-color: blue; */
+    margin: 50px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.sign_in_inputs_continer{
+    width: 30%;
+    /* background-color: blueviolet; */
+    text-align: center;
+    padding: 80px 0;
+    border-radius: 15px;
+    border: .1px solid #641C23;
+    box-shadow: 0px 0px 10px rgb(84, 83, 83);
+}
+
+.sign_in_inputs_continer h1{
+    font-size: 45px;
+}
+
+.sign_in_inputs_continer p{
+    font-size: 20px;
+}
+
+.sign_in_inputs_continer input{
+    display: block;
+    width: 70%;
+    padding: 15px 10px;
+    border-radius: 10px;
+    margin:10px auto;
+    outline: none;
+    border: .1px solid #641C23;
+    color: #641C23;
+    direction: ltr;
+    font-size: larger;
+}
+
+
+
+.forget_password{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px auto;
+    color: black;
+}
+
+.remember_me{
+    width: 50%;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    direction: ltr;
+}
+
+.remember_me input{
+    width: 10%;
+    padding: 15px !important;
+    margin: 0px;
+}
+
+.remember_me p{
+    font-size: medium;
+    width: 60%;
+    padding: 0px;
+    margin: 0;
+    color: black;
+}
+
+.forget_password a{
+    color: black !important;
+}
+
+.sign_in_inputs_continer button{
+    width: 70%;
+    padding: 10px;
+    font-size: larger;
+    font-weight: bold;
+    background-color: #b01726;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+
+.sign_in_panner{
+    width: 50%;
+    /* height: 70vh; */
+    /* background-color: chocolate; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.sign_in_panner img{
+    width: 70%;
+}
+
+.go_to_sign_up{
+    padding: 8px 20px;
+    font-size: larger;
+    background-color: #b01726;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

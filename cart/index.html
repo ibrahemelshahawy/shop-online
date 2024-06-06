@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>cart</title>
+    <link rel="icon" href="../img/mobile-shopping.png">
+
+</head>
+
+<body>
+    <link rel="stylesheet" href="../cart/style.css">
+    <link rel="stylesheet" href="../home/index.css">
+
+    <nav>
+        <div class="bage_logo">
+            <img src="../img/mobile-shopping.png" alt="">
+            <h1>متجرنا اونلاين</h1>
+        </div>
+        <div class="search_box">
+            <input type="search" placeholder="ابحث عن منتجك المفضل.......">
+            <button type="submit">
+                <img src="../img/search (1).png" alt="">
+            </button>
+        </div>
+
+        <div class="cart_logout" >
+            <span onclick="logOut()">
+                <img src="../img/log-out.png" alt="">
+                <p>تسجيل خروج</p>
+            </span>
+
+            <span class="cart">
+                <a href="../home/index.html">
+                    <img src="../img/home.png" alt="">
+                <p>الصفحه الرئيسيه</p>
+                </a>
+                
+            </span>
+            <button class="side_menu" onclick="openSideList()"><img src="../img/menu (1).png" alt=""></button>
+        </div>
+        
+    </nav>
+<div class="side_menu_parent" id="side_menu_parent">
+    <div class="side_menu_black_continer" onclick="closeSideMenu()"></div>
+    <div class="side_menu_continer" id="side_menu_continer">
+        <div class="close_side_menu">
+            <img src="../img/close side menu.png" alt="" onclick="closeSideMenu()">
+        </div>
+        <div class="menu_header">
+            <div class="profile_photo">
+                <img src="" alt="" id="profile_photo">
+            </div>
+            <div class="profile_info">
+                <h3 id="client_name"></h3>
+                <p id="client_email"></p>
+            </div>
+        </div>
+        <div class="side_menu_logout">
+            <img src="../img/log-out.png" alt="">
+            <p>تسجيل الخروج</p>
+        </div>
+        <div class="side_menu_pages">
+            <ul>
+                <li>الكل</li>
+                <li>ملابس الرجال</li>
+                <li>ملابس النساء</li>
+                <li>ملابس الأطفال</li>
+                <li>الإكسسوارات</li>
+                <li>الأحذية</li>
+                <li>مجموعات المواسم</li>
+                <li>مجموعات خاصة</li>
+                <li> الشاذلي العروض والصفقات</li>
+                <li>دلائل المقاسات</li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+
+        
+
+
+<div class="popup_continer" id="popup" >
+    <div class="closing_div" onclick="closePopup1()"></div>
+<div class="product_popup" id="popup_content">
+    <img src="../img/close.png" alt="" onclick="closePopup1()" class="close">
+</div>
+</div>
+<!-- ---======================================================================= -->
+<h1 class="cart_title">سلة المشتريات</h1>
+
+<div class="cart_products_continer">
+    <div class="cart_products" id="cart_products"></div>
+    <div class="cart_products_recept" id="cart_products_recept">
+        <div class="recept_sail_code">
+            <h3>كود الخصم</h3>
+            <p>فعل كوبون خصم  online متجرنا  (W15) لكل الطلبيات لتحصل علي خصم يصل الي 90% عند اتمام الدفع، الصق كود خصم شي ان 100٪ (W15) فعال لجميع العملاء للاستفادة من خصم فوري 10% علي كل شئ.</p>
+            <span class="code_input">
+                <input type="text" placeholder="كود الخصم" id="sail">
+                <button id="sail_Btn">تأكيد الخصم</button>
+            </span>
+        </div>
+        <div class="recept_data">
+            <span class="recept_data_span">
+                <h3>قيمه كليه :</h3>
+                <h3 id="recept_total_price"></h3>
+            </span>
+
+            <span class="recept_data_span">
+                <h3>قيمه الخصم :</h3>
+                <h3 id="total_price"></h3>
+            </span>
+
+            <span class="recept_data_span" style="border-bottom: .1px solid black;">
+                <h3>قيمه الضريبه :</h3>
+                <h3 id="taxes_value"></h3>
+            </span>
+
+            <span class="recept_data_span">
+                <h3>مستحق الدفع :</h3>
+                <h3 id="final_coast"></h3>
+            </span>
+            <button class="confirm_order" id="confirm_order" onclick="goToOrderConfirmation()">تأكيد الطلب </button>
+        </div>
+    </div>
+
+</div>
+
+
+    <div class="footer">
+        <div class="footer_search">
+            <p>ابحث تجد كل ماتحبه</p>
+            <input type="search">
+            <button>
+                <img src="../img/search (1).png" alt="">
+            </button>
+        </div>
+
+        <div class="social_media">
+            <p>تابعنا ليصلك كل جديد</p>
+            <a href="http://">
+                <img src="../img/174-1744532_facebook-icon-link-facebook-white-icon-hd-png-fotor-bg-remover-2023041811029 1.png"
+                    alt="">
+            </a>
+
+            <a href="http://">
+                <img src="../img/Instagram svg.png" alt="">
+            </a>
+
+            <a href="http://">
+                <img src="/img/Pinterest svg.png" alt="">
+            </a>
+
+            <a href="http://">
+                <img src="../img/YouTube svg.png" alt="">
+            </a>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="about_our_shop">
+            <div class="about_our_shop_sec">
+                <h1>تواصل معنا</h1>
+                <a href=""><p>الشحن والتوصيل</p></a> 
+                <a href=""><p>الشحن والتوصيل</p></a> 
+                <a href=""><p>الشحن والتوصيل</p></a> 
+                <a href=""><p>الشحن والتوصيل</p></a> 
+            </div>
+
+            <div class="about_our_shop_sec">
+                <h1>تواصل معنا</h1>
+                <a href=""><p>الشحن والتوصيل</p></a> 
+                <a href=""><p>الشحن والتوصيل</p></a> 
+                <a href=""><p>الشحن والتوصيل</p></a> 
+                <a href=""><p>الشحن والتوصيل</p></a> 
+            </div>
+
+            <div class="about_our_shop_sec">
+                <h1>تواصل معنا</h1>
+                <a href=""><p>الشحن والتوصيل</p></a> 
+                <a href=""><p>الشحن والتوصيل</p></a> 
+                <a href=""><p>الشحن والتوصيل</p></a> 
+                <a href=""><p>الشحن والتوصيل</p></a> 
+            </div>
+
+            <div class="about_our_shop_sec">
+                <h1>تواصل معنا</h1>
+                <a href=""><p>الشحن والتوصيل</p></a> 
+                <a href=""><p>الشحن والتوصيل</p></a> 
+                <a href=""><p>الشحن والتوصيل</p></a> 
+                <a href=""><p>الشحن والتوصيل</p></a> 
+            </div>
+
+        </div>
+        <div class="about_us">
+        <div class="footer_logo">
+            <img src="../img/mobile-shopping.png" alt="">
+            <h1>متجرنا اونلاين</h1>
+        </div>
+        <p class="about_discreption">المتاجر الإلكترونية أصبحت جزءًا من حياتنا اليومية الآن، لأن الجميع يستمتع بإمكانية شراء كل ما يحتاجون إليه، سواء كانت ملابس أو إلكترونيات، دون الحاجة إلى التحرك بالقدم. والأمر يكون أفضل حتى عندما يمكنك شراء كل ما تبحث عنه، كل ذلك من نفس المتجر. هذا ما تقدمه جوميا مصر، وهذا ما يجعلها واحدة من أفضل مواقع التسوق عبر الإنترنت في مصر.</p>
+        <p class="location">العنوان : طنطا / سبرباي شارع الشيخ محمد بسيوني</p>
+        <div class="our_partiners">
+            <img src="../img/01.png" alt="">
+            <img src="../img/02.png" alt="">
+            <img src="../img/03 1.png" alt="">
+        </div>
+    </div>
+    </footer>
+<div class="copy_rights">
+    <p>© 2024 ibrahem elshahawy Enterprises </p>
+</div>
+<script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../cart/index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,431 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+*{
+    /* background-color: red; */
+    direction: rtl;
+}
+
+.ibm-plex sans arabic-thin {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .ibm-plex sans arabic-extralight {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .ibm-plex sans arabic-light {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ibm-plex sans arabic-regular {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ibm-plex sans arabic-medium {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ibm-plex sans arabic-semibold {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .ibm-plex sans arabic-bold {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  
+  nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: .1px solid #3f3c3c96;
+  }
+
+  .bage_logo{
+    width: 15%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bage_logo img{
+    width: 50px;
+    height: 50px;
+  }
+
+  .search_box{
+    width: 50%;
+    /* background-color: chocolate; */
+    display: flex;
+    margin: auto;
+  }
+
+  .search_box input{
+    width: 90%;
+    /* height: 50px; */
+    border: 1px solid #9A0505;
+    outline: none;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left: none;
+    padding: 15px 5px;
+    color: #9A0505;
+
+  }
+
+  .search_box button{
+    border: 1px solid #9A0505;
+    border-right: none;
+    outline: none;
+    border-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    cursor: pointer;
+
+  }
+
+  .search_box button img{
+    width: 30px;
+    height: 30px;
+  }
+
+  .cart_logout{
+    width: 20%;
+    /* background-color: aqua; */
+    display: flex;
+  }
+
+  .cart_logout span{
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+  }
+
+  .cart_logout img{
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px;
+  }
+
+  .signup_progress{
+    width: 25%;
+    height: 100px;
+    /* background-color: aqua ; */
+    margin: 20px auto;
+    display: flex;
+    align-items:center ;
+  }
+
+  .step1{
+    width: 25%;
+    margin: auto;
+    font-size: small;
+    
+  }
+
+  .step1 p{
+    text-align: center;
+  }
+
+  .signup_progress span{
+    width: 70%;
+    /* height: -15px; */
+    border-bottom: 3px dashed #9a050592;
+  }
+
+  .step1 img{
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    margin: auto !important;
+    /* margin: 0px 20px; */
+  }
+
+  .client_info{
+    width: 90%;
+    /* height: 70vh; */
+    /* background-color: #9A0505; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
+
+
+  .form{
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: aquamarine; */
+    padding: 30px 15px;
+    border: 1px solid #9A0505;
+    border-radius: 15px;
+    
+  }
+
+  .form span{
+    width: 45%;
+    margin: auto;
+  }
+
+
+  .form input{
+    width: 100%;
+    border: .1px solid rgba(128, 128, 128, 0.736);
+    border-radius: 5px;
+    outline: none;
+    padding: 8px;
+  
+  }
+
+  .form select{
+    width: 106%;
+    border: .1px solid rgba(128, 128, 128, 0.736);
+    border-radius: 5px;
+    outline: none;
+    padding: 8px;
+  
+  }
+
+  
+  .signup_submit button{
+    width: 25%;
+    background-color: #9A0505;
+   /* padding: 5px; */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: 800;
+   color: white;
+   border: none;
+   border-radius: 15px;
+   cursor: pointer;
+  }
+
+  .signup_submit{
+    direction: ltr;
+    width: 100%;
+    margin:20px auto;
+  }
+
+  .signup_submit button img{
+    width: 15px;
+    height: 15px;
+    margin: auto;
+    padding: 0px;
+    float: left;
+
+  }
+
+  .signup_submit button p{
+    padding-right:10px ;
+    font-size: 15px;
+  }
+
+
+  .signup_panner{
+    width: 40%;
+    margin: auto;
+
+    /* background-color: blue; */
+  }
+
+  .signup_panner img{
+    width: 100%;
+    margin: auto;
+
+  }
+
+
+
+  .footer{
+    width: 100%;
+    /* height: 20vh; */
+    padding: 40px 0px;
+    background-color: #641C23;
+    display: flex;
+    align-items: center;
+  }
+
+
+  .footer_search{
+    width: 50%;
+    /* background-color: aqua; */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+  }
+
+  .footer_search p{
+    width: 100%;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+  }
+
+  .footer_search input{
+    width: 90%;
+    padding: 12px;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 15px;
+    border-top-left-radius:0px ;
+    border-bottom-left-radius:0px ;
+    background-color: #641C23;
+    color: white;
+  }
+
+  .footer_search button{
+    
+    border-top-left-radius:15px ;
+    border-bottom-left-radius:15px ;
+    padding: 3px 5px;
+    border: 1px solid white;
+  }
+
+  .footer_search button img{
+    width: 30px;
+  }
+
+  .social_media{
+    width: 10%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+  }
+
+  .social_media p{
+    width: 100%;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+
+  }
+
+  .social_media img{
+    width: 30px;
+  }
+
+  footer{
+    width: 100%;
+    /* height: 50vh; */
+    background-color: #A72F3B;
+    display: flex;
+    padding: 30px 0px;
+  }
+
+  .about_our_shop{
+    width: 60%;
+    /* height: 100%; */
+    /* background-color: aqua; */
+    display: flex;
+    
+  }
+
+  a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .about_our_shop_sec{
+    margin: auto;
+    text-align: right;
+    color: white;
+  }
+
+  .about_our_shop_sec h1{
+    border-bottom: 3px solid white;
+  }
+
+  .about_us{
+    width: 40%;
+    /* height: 100%; */
+    /* background-color: blueviolet; */
+    direction: ltr;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+  }
+
+  .footer_logo {
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    padding: 20px;
+  }
+
+
+  .footer_logo img{
+    width:100px ;
+    height: 100px;
+    margin: auto;
+    display: block;
+  }
+
+  .about_discreption{
+    width: 60%;
+    font-size: large;
+    padding: 20px;
+  }
+
+  .location{
+    width: 100%;
+    text-align: center;
+  }
+
+  .our_partiners{
+    width: 50%;
+    /* background-color:chocolate ; */
+    display: flex;
+    margin: auto;
+    padding: 20px 0px;
+    justify-content: space-between;
+  }
+
+  .our_partiners img{
+    width: 100px;
+    
+  }
+
+  .copy_rights{
+    width: 100%;
+    background-color: #641C23;
+    text-align: center;
+    color: white;
+    margin: 0px;
+  }
+
+  .copy_rights p{
+    margin: 0px;
+  }

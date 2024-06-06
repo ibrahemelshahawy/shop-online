@@ -1,0 +1,245 @@
+.recept_data{
+    border: none !important;
+}
+
+.cart_products_recept {
+    margin-top: 50px !important;
+}
+
+.cart_products button{
+    padding:8px 15px;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+    margin: 0px 10px;
+}
+
+
+/* .cart_products button:focus{
+    background-color: brown;
+    color: white;
+} */
+
+
+.pay_by_hand{
+
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: .1px solid saddlebrown;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.pay_by_hand input{
+    width: 45%;
+    padding:5px 8px;
+    /* border: none; */
+    outline: none;
+    margin: 5px;
+    font-size: medium;
+    border-radius: 5px;
+    border: .1px solid gray;
+    direction: ltr;
+}
+
+#payByHand{
+    background-color: brown;
+    color: white;
+}
+
+#googleMap {
+    height: 40vh;
+    width: 95%;
+    margin:20px auto;
+  }
+  
+
+  .pay_by_visa{
+    /* width: 70%; */
+    /* height:100vh ; */
+    /* margin: 20px 0px; */
+    margin-top: 10px;
+    /* background-color: blue; */
+    /* display: flex; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    direction: ltr;
+    padding: 20px;
+    border-radius: 10px;
+    border: .1px solid saddlebrown;
+    display: none;
+    transition: .5s;
+
+}
+
+.pay_by_visa span{
+    padding: 5px;
+    width: 50%;
+}
+
+.pay_by_visa span p{
+    direction: ltr !important;
+    margin: 0px;
+    padding: 10px 10px;
+}
+
+
+.pay_by_visa input{
+    width: 95%;
+    padding:5px 8px;
+    /* border: none; */
+    outline: none;
+    /* margin: 5px; */
+    font-size: medium;
+    direction: ltr;
+}
+
+
+.visa_data{
+    width: 90%;
+    /* height: 20vh; */
+    /* background-color: blueviolet; */
+    direction: ltr;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding:  20px;
+}
+
+#card_number{
+    width: 50%;
+}
+
+.visa_data input{
+/* padding: 0px !important; */
+border-radius: 5px;
+outline: none;
+border: .1px solid gray;
+width: 99%;
+}
+
+.visa_data span{
+    padding: 0px !important;
+    }
+    
+    .visa_data span p{
+        padding: 0px !important;
+        }
+        
+
+#CVV{
+    width: 15%;
+}
+
+#Expiry{
+    width: 20%;
+}
+
+
+.zipcode_state{
+    display: flex;
+    width: 99%;
+    margin: auto;
+    /* background-color: brown; */
+}
+
+
+.zipcode_state input{
+    border-radius: 5px;
+}
+
+
+.print{
+  padding: 10px 0;
+  width: 30%;
+  margin:20px auto;
+  display: block;
+  border: none;
+  background-color: rgb(94, 2, 2);
+  font-size: larger;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.cart_title{
+    display: flex;
+    padding: 0px !important;
+}
+
+.cart_title h1{
+    font-size: 30px;
+}
+
+.cart_title a{
+    color: rgb(126, 4, 4) !important;
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+
+#googleMap{
+    width: 90%;
+}
+
+
+#location_btn{
+    display: flex;
+    align-items: center;
+}
+
+#location_btn img{
+    width: 30px;
+}
+
+#map-link{
+    width: 80% !important;
+    margin: auto !important;
+}
+
+
+.pay_confirmation{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(16, 14, 14, 0.386);
+    color: brown;
+    /* opacity: 0; */
+    display: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.pay_verification_toast{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.tenor-gif-embed{
+    width: 70%;
+    /* height: 50vh; */
+    border-radius: 15px;
+    margin: auto;
+}
+
+
+@media print {
+    nav{
+        display: none;
+    }
+}
